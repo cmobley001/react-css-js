@@ -1,0 +1,13 @@
+/* Component styles. Each component gets a unique root class and nests everything under it,
+   so rules can't collide even though class names are global. */
+@layer components {
+  .site-header {
+    padding-block: var(--space-6);
+    background-color: var(--color-surface-raised);
+    border-block-end: 1px solid var(--color-border);
+
+    & h1 {
+      font-size: var(--text-xl);
+    }
+  }
+}
